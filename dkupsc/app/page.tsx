@@ -3,7 +3,7 @@
 import { Card, Center, Space, Text } from "@mantine/core";
 import React, { useState } from "react";
 import { ExamType, fontFamily } from "./Constants/types";
-import Container from "./lowLevelComponents/Container";
+import Container from "./components/lowLevel/Container";
 import { useRouter } from "next/navigation";
 
 const examTypes: ExamType[] = [

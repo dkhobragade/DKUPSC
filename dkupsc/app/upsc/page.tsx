@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeaderMegaMenu } from '../lowLevelComponents/Header'
+import { HeaderMegaMenu } from '../components/lowLevel/Header'
 
 const page = () =>
 {
