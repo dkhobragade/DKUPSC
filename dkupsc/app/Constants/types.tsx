@@ -13,3 +13,8 @@ export const menuList = [
     { key: 4, value: 'Demo' },
     { key: 5, value: 'Downloads' },
 ]
+
+export const examTypes: ExamType[] = [
+    { key: 1, name: "UPSC" },
+    { key: 2, name: "MPSC" },
+];
