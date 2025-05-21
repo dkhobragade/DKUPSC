@@ -1,9 +1,12 @@
 "use client";
 
-import { Box, Button, Group, Space, Text, } from '@mantine/core';
+import { Box, Group, Space, Text, } from '@mantine/core';
 import classes from './HeaderMegaMenu.module.css';
 import { fontFamily, menuList } from '@/app/Constants/types';
 import React, { useState } from 'react';
+import Button from './Button';
+import LogoImg from '../lowLevel/logo.png'
+import Image from 'next/image';
 
 export function HeaderMegaMenu ()
 {
@@ -27,18 +30,13 @@ export function HeaderMegaMenu ()
         <Box pb={ 120 }>
             <header className={ classes.header }>
                 <Group justify="space-between" h="100%">
-                    {/* <Image src={ logoImg } radius="md"
-                        h={ 200 }
-                        w="auto"
-                        fit="contain"
-                        alt='Logo' /> */}
-                    logo
+                    <Image src={ LogoImg } style={ { width: 'fit-content', height: '-webkit-fill-available' } } alt="Logo" />
                     <Group h="100%" gap={ 0 } visibleFrom="sm">
                         { renderMenuList() }
                     </Group>
                     <Group visibleFrom="sm">
-                        <Button variant="default">Log in</Button>
-                        <Button>Sign up</Button>
+                        <Button variant="filled" text='Log In' />
+                        <Button text='Sign Up' variant="default" />
                     </Group>
                 </Group>
             </header>
