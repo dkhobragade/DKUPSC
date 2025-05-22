@@ -7,11 +7,13 @@ export type ExamType = {
 export const fontFamily = [ 'Georgia', 'fangsong' ]
 
 export const menuList = [
-    { key: 1, value: 'Courses' },
-    { key: 2, value: 'Current Affairs' },
-    { key: 3, value: 'Free Initiatives' },
-    { key: 4, value: 'Demo' },
-    { key: 5, value: 'Downloads' },
+    {
+        key: 1, value: 'Courses', dropdown: true,
+    },
+    { key: 2, value: 'Current Affairs', dropdown: false },
+    { key: 3, value: 'Free Initiatives', dropdown: false },
+    { key: 4, value: 'Demo', dropdown: false },
+    { key: 5, value: 'Downloads', dropdown: false },
 ]
 
 export const examTypes: ExamType[] = [
